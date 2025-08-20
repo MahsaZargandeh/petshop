@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حساب من</title>
+  <link rel="stylesheet" href="Account.css">
+  <link rel="stylesheet" href="./Account.js">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <img id="pet-animation" src="./img/ff.jfif" alt="حیوان" />
+  <div class="account-container">
+    <div class="profile">
+      <img src="./img/ورود/mahsa.jpg" alt="آواتار" class="avatar">
+      <h2 id="username">مهسا زرگنده</h2>
+      <p id="useremail">m.zargandeh85@gmail.com</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showTab(event, 'orders')"><i class="fas fa-box"></i> سفارش‌ها</button>
+      <button class="tab" onclick="showTab(event, 'address')"><i class="fas fa-map-marker-alt"></i> آدرس‌ها</button>
+      <button class="tab" onclick="showTab(event, 'password')"><i class="fas fa-lock"></i> تغییر رمز</button>
+      <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> خروج</button>
+    </div>
+
+    <div class="tab-content" id="orders">
+      <h3>سفارش‌های اخیر</h3>
+      <ul class="order-list">
+        <li>🟢 سفارش #12345 - تحویل شده</li>
+        <li>🟡 سفارش #12346 - در حال پردازش</li>
+      </ul>
+    </div>
+
+    <div class="tab-content hidden" id="address">
+      <h3>آدرس‌های ذخیره‌شده</h3>
+      <p></p>
+    </div>
+
+    <div class="tab-content hidden" id="password">
+      <h3>تغییر رمز عبور</h3>
+      <form>
+        <input type="password" placeholder="رمز فعلی" required>
+        <input type="password" placeholder="رمز جدید" required>
+        <input type="password" placeholder="تأیید رمز جدید" required>
+        <button type="submit">ذخیره تغییرات</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="Account.js"></script>
+</body>
+</html>

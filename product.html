@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محصولات سگ</title>
+    <link rel="stylesheet" href="./product.css" />
+    <link rel="stylesheet" href="./product.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">🐾 پت‌شاپ من</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">خانه</a></li>
+          <li><a href="#">محصولات</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <!-- اسلایدر -->
+    <section class="slider-section">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/vbn.webp" alt="محصول 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/ورود/aa.jpg" alt="محصول 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/ورود/bb.jpg" alt="محصول 3" />
+          </div>
+           <div class="swiper-slide">
+            <img src="./img/ورود/بهداشت-و-سلامت-سگ-min.jpg" alt="محصول 4" />
+          </div>
+           <div class="swiper-slide">
+            <img src="./img/ورود/shos.webp" alt="محصول 5" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- محصولات -->
+    <section class="products">
+      <div class="product-card">
+        <img src="./img/Nutripet-Dog-dry-food-29-10kg.jpg" alt="غذای سگ" />
+        <h3>غذای سگ nutri</h3>
+        <p>۳۵۰,۰۰۰ تومان</p>
+        <div class="counter">
+          <button onclick="decrease(this)">−</button>
+          <span>1</span>
+          <button onclick="increase(this)">+</button>
+        </div>
+        <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/ورود/shampo.jpg" alt="شوینده سگ" />
+        <h3>شامپو</h3>
+        <p>۲۵۰,۰۰۰ تومان</p>
+        <div class="counter">
+          <button onclick="decrease(this)">−</button>
+          <span>1</span>
+          <button onclick="increase(this)">+</button>
+        </div>
+        <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/ورود/top.jpg" alt="اسباب‌بازی سگ" />
+        <h3>توپ رنگی</h3>
+        <p>۹۰,۰۰۰ تومان</p>
+        <div class="counter">
+          <button onclick="decrease(this)">−</button>
+          <span>1</span>
+          <button onclick="increase(this)">+</button>
+        </div>
+        <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+      </div>
+
+      
+      <div class="product-card">
+        <img src="./img/ورود/kif.jpg" alt=" کیف سگ" />
+        <h3> کیف حمل سگ </h3>
+        <p>۹۰,۰۰۰ تومان</p>
+        <div class="counter">
+          <button onclick="decrease(this)">−</button>
+          <span>1</span>
+          <button onclick="increase(this)">+</button>
+        </div>
+        <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>تمامی حقوق محفوظ است © 2025 پت‌شاپ من</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>

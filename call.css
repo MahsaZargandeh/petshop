@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazirmatn, sans-serif;
+  user-select: none;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  direction: rtl;
+  background:
+    linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(0, 80, 160, 0.7)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* کانتینر فرم */
+.contact-page {
+  width: 100%;
+  max-width: 540px;
+}
+
+/* جعبه فرم */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 30px 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-10px);
+}
+
+/* عنوان فرم */
+.form-container h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #004085;
+  text-align: center;
+  user-select: none;
+}
+
+/* برچسب‌ها */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* فیلدهای ورودی */
+.form-control {
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  font-size: 16px;
+  padding: 12px 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* دکمه ارسال */
+.btn-submit {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-submit i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-submit:hover i {
+  transform: translateX(6px);
+}
+
+/* پیام وضعیت */
+#status p {
+  font-size: 16px;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* ریسپانسیو */
+@media (max-width: 576px) {
+  .form-container {
+    padding: 20px 25px;
+  }
+
+  .form-container h2 {
+    font-size: 24px;
+  }
+
+  .btn-submit {
+    font-size: 16px;
+  }
+}

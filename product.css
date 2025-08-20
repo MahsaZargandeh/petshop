@@ -1,0 +1,161 @@
+body {
+  font-family: 'Vazir', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  direction: rtl;
+}
+
+.header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-image: url(./img/بنر-ص-اصلی-جدید-1190x383.jpg);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f76c6c;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f76c6c;
+}
+
+.cart-icon {
+  font-size: 16px;
+}
+
+.slider-section {
+  margin: 20px 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 700px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 2px solid black;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(185, 247, 1, 0.845);
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgb(158, 237, 62);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.counter button {
+  background: #f76c6c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #f76c6c;
+}
+
+.footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ✅ ریسپانسیو */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .swiper {
+    height: 200px;
+  }
+}

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pet shop</title>
+    <!--font cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--style css-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./lang.js" />
+  </head>
+  <body>
+    <!-- staart header -->
+    <header class="header">
+      <div class="topbar">
+        <div class="container">
+          <div class="offer-banner">
+            <p><a href="/welcom.html" data-lang="login">ورود</a></p>
+            <p>/</p>
+            <p><a href="" data-lang="register">ثبت نام</a></p>
+            <p>/</p>
+            <p><a href="./Account.html" data-lang="myAccount">حساب من</a></p>
+          </div>
+          <div class="top-social">
+            <ul>
+              <li>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-user-alt"></i></a>
+              </li>
+              <li>
+                <button class="lang-switch" onclick="toggleLanguage()">
+                  <span class="lang-text">EN</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sec py-3">
+        <div class="container">
+          <div class="logo"><img src="./img/logoo.jpg" alt="" /></div>
+          <div class="desk-menu">
+            <ul class="flex-menus">
+              <li><a href="">خانه</a></li>
+              <li><a href="">تازه ها</a></li>
+              <li><a href="">فروشگاه</a></li>
+              <li><a href="./product.html">محصولات سگ</a></li>
+              <li><a href="">محصولات گربه</a></li>
+              <li><a href="/trand.html">ترندها</a></li>
+              <li><a href="">وبلاگ</a></li>
+              <li><a href="./call.html">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <button
+              class="btn toggle-icon"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--offcanvas-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">منوها</h5>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-menus">
+          <li><a href="">خانه</a></li>
+          <li><a href="">نازه ها</a></li>
+          <li><a href="">فروشگاه</a></li>
+          <li><a href="">ترندها</a></li>
+          <li><a href="">وبلاگ</a></li>
+          <li><a href="">تماس با ما</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="slider">
+        <input type="radio" name="slider" id="s1" checked />
+        <input type="radio" name="slider" id="s2" />
+        <input type="radio" name="slider" id="s3" />
+        <input type="radio" name="slider" id="s4" />
+        <input type="radio" name="slider" id="s5" />
+        <label for="s1" id="slider1">
+          <img src="/img/1111.png" alt="image 1" />
+        </label>
+        <label for="s2" id="slider2">
+          <img src="/img/2222.jpg" alt="image 2" />
+        </label>
+        <label for="s3" id="slider3">
+          <img src="/img/ذذذ.jpg" alt="image 3" />
+        </label>
+        <label for="s4" id="slider4">
+          <img src="/img/4444.jpg" alt="image 4" />
+        </label>
+        <label for="s5" id="slider5">
+          <img src="/img/5555.jpg" alt="image 5" />
+        </label>
+      </div>
+    </div>
+    <!--start banner-->
+    <section class="banner-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="banner-text">
+              <span>فروش ویژه این هفته برگزار می شود</span>
+              <h3>تا 50% تخفیف برای اولین خرید</h3>
+              <p>روی سلامتیش تمرکز کن</p>
+              <div class="nav-btn mt-4">
+                <a href=""> همین حالا خرید کنید</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--featured-->
+    <section class="featured-sec py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="featured-flex">
+              <i class="fas fa-shield-alt"></i>
+              <p class="p-text-s">پرداخت های 100% امن</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="featured-flex">
+              <i class="fas fa-headphones"></i>
+              <p class="p-text-s">پشتیبانی</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="featured-flex">
+              <i class="fas fa-undo-alt"></i>
+              <p class="p-text-s">روز بازگشت 30</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="featured-flex">
+              <i class="fas fa-shipping-fast"></i>
+              <p class="p-text-s">ارسال رایگان</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--deal-->
+    <section class="deal-sec bg-color py-5">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="pe-5 text-end">
+            <h3 class="title">غذای سگ وگربه</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/monello.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان500/000</div>
+                <p>غذای گربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/mmm.webp" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان650/000</div>
+                <p>ظرف غذا</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/aa.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان400/000</div>
+                <p>غذای گربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/ورود/shampo.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان550/000</div>
+                <p>شامپو سگ و گربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/images (1).jfif" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان550/000</div>
+                <p>ظرف غذای سگ وگربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/images (3).jfif" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان550/000</div>
+                <p>ظرف غذای سگ وگربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/ooo.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان550/000</div>
+                <p>ظرف غذای سگ وگربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/vvv.jfif" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان550/000</div>
+                <p>ظرف غذای سگ وگربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--trend-->
+    <section class="trend-sec py-5">
+      <div class="container-fluid">
+        <h3 class="title text-center">محصولات جدید</h3>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-sm-6">
+            <div class="trend-box">
+              <img src="/img/york-cat-and-dog-shampoo-1.jpg" alt="" />
+              <h4>شامپو سگ وگربه</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="trend-box">
+              <img src="/img/555.jpg" alt="" />
+              <h4>غذای سگ وگربه</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="trend-box">
+              <img src="/img/اسسس.jpg" alt="" />
+              <h4>غذای سگ</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="deal-sec bg-color py-5">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="pe-5 text-end">
+            <h3 class="title">پرفروش ترین ها</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/happydog-karibik.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان500/000</div>
+                <p>غذای گربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/xxx.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان650/000</div>
+                <p>ظرف غذا</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/ooo.jpg" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان400/000</div>
+                <p>غذای گربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-box">
+              <div class="pr-img">
+                <div class="img">
+                  <img src="./img/images (12).jfif" alt="" />
+                </div>
+                <div class="tags">
+                  <div class="nav-btn">
+                    <a href="">افزودن به سبد خرید</a>
+                  </div>
+                  <ul class="share-pr">
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-shopping-bag"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-eye"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pr-text">
+                <div class="price">تومان550/000</div>
+                <p>شامپو سگ و گربه</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 showcat-sec bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="show-product">
+              <img src="./img/ld.jpg" alt="" />
+              <div class="show-text">
+                <h6>با اطمینان خرید کنید</h6>
+                <p>"با تغذیه سالم، حیوان خانگی‌تان را شاد و سرحال نگه دارید"</p>
+                <div class="nav-btn mt-4">
+                  <a href="">همین حالا خرید کنید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="show-product">
+              <img src="./img/fffff.jpg" alt="" />
+              <div class="show-text">
+                <h6>با اطمینان خرید کنید</h6>
+                <p>
+                  "با محصولات بهداشتی ما، زندگی حیوانات خانگی شما پر از شادی و
+                  نشاط است."
+                </p>
+                <div class="nav-btn mt-4">
+                  <a href="">همین حالا خرید کنید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--sliyder-->
+    <section class="py-5 testimonial">
+      <div class="container">
+        <h3 class="title text-center">نظرات مشتریان ما</h3>
+        <div id="carouselExample" class="carousel slide mt-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolore aut dolores perferendis fugit Dolore aut dolores
+                  perferendis fugit Dolore aut dolores perferendis fugit Dolore
+                  aut dolores perferendis fugit Dolore aut dolores perferendis
+                  fugit
+                </p>
+                <div class="test-info">
+                  <img src="./img/naza3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolore aut dolores perferendis fugit Dolore aut dolores
+                  perferendis fugit Dolore aut dolores perferendis fugit Dolore
+                </p>
+                <div class="test-info">
+                  <img src="./img/naza4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolore aut dolores perferendis fugit Dolore aut dolores
+                </p>
+                <div class="test-info">
+                  <img src="./img/naza2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="test-info">
+                  <img src="./img/naza3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <i class="fas fa-arrow-alt-circle-left"></i>
+            </span>
+            <span class="visually-hidden">قبلی</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <i class="fas fa-arrow-alt-circle-right"></i>
+            </span>
+            <span class="visually-hidden">بعدی</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--start blog-->
+    <section class="py-5 blog-sec">
+      <div class="container">
+        <h3 class="title text-center">از وبلاگ</h3>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-sm-6">
+            <div class="blog-box">
+              <div class="blog-img">
+                <img src="./img/غذای-سگ-گربه.jpg" alt="" />
+              </div>
+              <div class="blog-text">
+                <div class="data mb-2">3 1404 فروردین</div>
+                <h4>همه ترندها برای شما اینجاست</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipis Fugit illum
+                  obcaecati libero quod,
+                </p>
+                <a href="" class="blog-ar">
+                  بیشتربخوانید<i class="fas fa-angle-double-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="blog-box">
+              <div class="blog-img">
+                <img src="./img/ttt2.jpg" alt="" />
+              </div>
+              <div class="blog-text">
+                <div class="data mb-2">3 1404 فروردین</div>
+                <h4>همه ترندها برای شما اینجاست</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipis Fugit illum
+                  obcaecati libero quod,
+                </p>
+                <a href="" class="blog-ar">
+                  بیشتربخوانید<i class="fas fa-angle-double-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="blog-box">
+              <div class="blog-img">
+                <img src="./img/ظرف.jpeg" alt="" />
+              </div>
+              <div class="blog-text">
+                <div class="data mb-2">3 1404 فروردین</div>
+                <h4>همه ترندها برای شما اینجاست</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipis Fugit illum
+                  obcaecati libero quod,
+                </p>
+                <a href="" class="blog-ar">
+                  بیشتربخوانید<i class="fas fa-angle-double-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--start footer-->
+    <div class="footer bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="footer-box">
+              <div class="footer-img mb-3">
+                <img src="./img/logoo.jpg" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing provident,
+                ratione amet animi
+              </p>
+              <div class="pay-img">
+                <img src="./img/free-icons-dreamstale.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="f-title"><h5>لینکهای مفید</h5></div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="">خرید امن</a></li>
+                <li><a href="">خانه</a></li>
+                <li><a href="">درباره ما</a></li>
+                <li><a href="">محصولات</a></li>
+                <li><a href="">تحویل</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="f-title"><h5>خدمات مشتریان</h5></div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="">خرید امن</a></li>
+                <li><a href="">خانه</a></li>
+                <li><a href="">درباره ما</a></li>
+                <li><a href="">محصولات</a></li>
+                <li><a href="">تحویل</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="f-title"><h5>جزِییات شرکت</h5></div>
+            <div class="footer-content">
+              <i class="fas fa-phone-square"></i>
+              <div>
+                <a href="tel:09393187231">09393187231</a>
+              </div>
+            </div>
+            <div class="footer-content">
+              <i class="far fa-envelope"></i>
+              <div>
+                <a href="email:m.zargandeh85@gmail.com"
+                  >m.zargandeh85@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="footer-content">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <a href="نیروی هوایی">نیروی هوایی</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="copyright">
+      <div class="container">
+        <div class="copyright-box">
+          <p>کپی رایت 2026 .تمامی حقوق محفوظ است</p>
+          <ul class="social-icons">
+            <li>
+              <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lang.js"></script>
+  </body>
+</html>
