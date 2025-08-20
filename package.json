@@ -8,5 +8,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahsaZargandeh/my-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MahsaZargandeh/my-project/issues"
+  },
+  "homepage": "https://github.com/MahsaZargandeh/my-project#readme"
 }
