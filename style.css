@@ -630,3 +630,12 @@ h3.title::before {
 .offer-banner p a[data-lang="login"] {
   color: white !important;
 }
+.topbar .offer-banner p,
+.topbar .offer-banner p a,
+.topbar .offer-banner a[data-lang="login"] {
+  color: #ffffff !important;
+}
+
+.topbar .offer-banner a[data-lang="login"]:hover {
+  color: #f5b041 !important;
+}
