@@ -606,3 +606,15 @@ h3.title::before {
 [dir="rtl"] {
   text-align: right;
 }
+.footer a,
+.footer-links a,
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer-links a:hover,
+.footer-content a:hover {
+  color: #f5b041;
+}
