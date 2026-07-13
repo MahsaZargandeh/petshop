@@ -639,3 +639,12 @@ h3.title::before {
 .topbar .offer-banner a[data-lang="login"]:hover {
   color: #f5b041 !important;
 }
+.login-link a {
+  color: white !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  color: #f5b041 !important;
+}
