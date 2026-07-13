@@ -618,3 +618,15 @@ h3.title::before {
 .footer-content a:hover {
   color: #f5b041;
 }
+.offer-banner a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.offer-banner a:hover {
+  color: #f5b041 !important;
+}
+
+.offer-banner p a[data-lang="login"] {
+  color: white !important;
+}
