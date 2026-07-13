@@ -1,95 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-<meta charset="UTF-8">
-<title>فروشگاه پت شاپ</title>
-<link rel="stylesheet" href="./pages.css">
-</head>
+    <title>فروشگاه پت شاپ</title>
 
-<body>
+    <link rel="stylesheet" href="./style.css" />
 
-<header class="page-header">
-<nav>
-<a href="./index.html">خانه</a>
-<a href="./shop.html">فروشگاه</a>
-<a href="./trend.html">ترندها</a>
-<a href="./blog.html">وبلاگ</a>
-<a href="./call.html">تماس</a>
-</nav>
-</header>
+    <style>
+      .shop-banner {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+          url("./img/image01.png");
 
+        height: 300px;
 
-<h1 class="page-title">
-🛒 فروشگاه محصولات حیوانات خانگی
-</h1>
+        background-size: cover;
 
+        background-position: center;
 
-<section class="container">
+        display: flex;
 
-<div class="cards">
+        justify-content: center;
 
+        align-items: center;
 
-<div class="card">
-<img src="./img/image020.jpg">
+        color: white;
+      }
 
-<div class="card-content">
-<h3>غذای سگ</h3>
-<p>غذاهای سالم و مقوی برای رشد بهتر سگ‌ها</p>
-<a class="btn" href="./product.html">مشاهده محصولات</a>
-</div>
+      .shop-banner h1 {
+        font-size: 40px;
+      }
 
-</div>
+      .shop-container {
+        width: 90%;
 
+        margin: 50px auto;
+      }
 
+      .filter-box {
+        background: white;
 
-<div class="card">
-<img src="./img/image019.webp">
+        padding: 20px;
 
-<div class="card-content">
-<h3>غذای گربه</h3>
-<p>تغذیه کامل برای سلامت و شادابی گربه‌ها</p>
-<a class="btn" href="./product.html">خرید</a>
-</div>
+        border-radius: 20px;
 
-</div>
+        box-shadow: 0 5px 20px #ddd;
 
+        margin-bottom: 40px;
 
+        display: flex;
 
-<div class="card">
-<img src="./img/image06.jpg">
+        gap: 15px;
 
-<div class="card-content">
-<h3>محصولات بهداشتی</h3>
-<p>شامپو و محصولات مراقبت از حیوانات</p>
-<a class="btn" href="./product.html">مشاهده</a>
-</div>
+        justify-content: center;
+      }
 
-</div>
+      .filter-box button {
+        border: none;
 
+        padding: 12px 25px;
 
+        border-radius: 25px;
 
-<div class="card">
-<img src="./img/image07.jpg">
+        background: #d98b39;
 
-<div class="card-content">
-<h3>اسباب بازی</h3>
-<p>سرگرمی و بازی برای حیوان خانگی شما</p>
-<a class="btn" href="./product.html">خرید</a>
-</div>
+        color: white;
 
-</div>
+        cursor: pointer;
+      }
 
+      .shop-grid {
+        display: grid;
 
-</div>
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-</section>
+        gap: 25px;
+      }
 
+      .shop-card {
+        background: white;
 
-<footer>
-<p>🐾 Pet Shop © 2026</p>
-</footer>
+        border-radius: 25px;
 
+        overflow: hidden;
 
-</body>
+        box-shadow: 0 8px 25px #ddd;
+
+        transition: 0.3s;
+      }
+
+      .shop-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .shop-card img {
+        width: 100%;
+
+        height: 230px;
+
+        object-fit: cover;
+      }
+
+      .shop-content {
+        padding: 20px;
+
+        text-align: center;
+      }
+
+      .shop-content h3 {
+        color: #b46b24;
+      }
+
+      .price {
+        color: #d98b39;
+
+        font-weight: bold;
+
+        font-size: 20px;
+      }
+
+      .buy {
+        display: inline-block;
+
+        margin-top: 15px;
+
+        padding: 10px 30px;
+
+        background: #d98b39;
+
+        color: white;
+
+        border-radius: 30px;
+
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="container">
+          <div class="offer-banner">
+            <p class="login-link">
+              <a href="./welcom.html" data-lang="login">ورود</a>
+            </p>
+            <p>/</p>
+            <p><a href="./welcom.html" data-lang="register">ثبت نام</a></p>
+            <p>/</p>
+            <p><a href="./Account.html" data-lang="myAccount">حساب من</a></p>
+          </div>
+          <div class="top-social">
+            <ul>
+              <li>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-user-alt"></i></a>
+              </li>
+              <li>
+                <button class="lang-switch" onclick="toggleLanguage()">
+                  <span class="lang-text">EN</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sec py-3">
+        <div class="container">
+          <div class="logo"><img src="./img/logoo.jpg" alt="" /></div>
+          <div class="desk-menu">
+            <ul class="flex-menus">
+              <li><a href="./index.html">خانه</a></li>
+              <a href="./new.html">تازه ها</a>
+              <a href="./shop.html">فروشگاه</a>
+              <li><a href="./product.html">محصولات سگ</a></li>
+              <li><a href="./product.html">محصولات گربه</a></li>
+              <a href="./trend.html">ترندها</a>
+              <a href="./blog.html">وبلاگ</a>
+              <li><a href="./call.html">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <button
+              class="btn toggle-icon"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="shop-banner">
+      <h1>🛒 فروشگاه پت شاپ</h1>
+    </section>
+
+    <section class="shop-container">
+      <div class="filter-box">
+        <button>همه</button>
+
+        <button>🐶 سگ</button>
+
+        <button>🐱 گربه</button>
+
+        <button>🧴 بهداشتی</button>
+      </div>
+
+      <div class="shop-grid">
+        <div class="shop-card">
+          <img src="./img/image020.jpg" />
+
+          <div class="shop-content">
+            <h3>غذای حرفه ای سگ</h3>
+
+            <p>غذای سالم و مقوی برای سگ‌ها</p>
+
+            <div class="price">500,000 تومان</div>
+
+            <a class="buy" href="./product.html"> مشاهده </a>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <img src="./img/image019.webp" />
+
+          <div class="shop-content">
+            <h3>ظرف غذای حیوانات</h3>
+
+            <p>ظروف زیبا و مقاوم</p>
+
+            <div class="price">250,000 تومان</div>
+
+            <a class="buy" href="./product.html"> مشاهده </a>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <img src="./img/image06.jpg" />
+
+          <div class="shop-content">
+            <h3>شامپو حیوانات</h3>
+
+            <p>محصولات بهداشتی سگ و گربه</p>
+
+            <div class="price">350,000 تومان</div>
+
+            <a class="buy" href="./product.html"> مشاهده </a>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <img src="./img/image07.jpg" />
+
+          <div class="shop-content">
+            <h3>اسباب بازی سگ</h3>
+
+            <p>سرگرمی و بازی حیوان خانگی</p>
+
+            <div class="price">180,000 تومان</div>
+
+            <a class="buy" href="./product.html"> مشاهده </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-color">
+      <p>🐾 Pet Shop © 2026</p>
+    </footer>
+  </body>
 </html>

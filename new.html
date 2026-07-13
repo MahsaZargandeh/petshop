@@ -1,114 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تازه های پت شاپ</title>
+    <link rel="stylesheet" href="./pages.css" />
+  </head>
 
-<head>
-<meta charset="UTF-8">
-<title>تازه های پت شاپ</title>
-<link rel="stylesheet" href="./pages.css">
-</head>
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="container">
+          <div class="offer-banner">
+            <p class="login-link">
+              <a href="./welcom.html" data-lang="login">ورود</a>
+            </p>
+            <p>/</p>
+            <p><a href="./welcom.html" data-lang="register">ثبت نام</a></p>
+            <p>/</p>
+            <p><a href="./Account.html" data-lang="myAccount">حساب من</a></p>
+          </div>
+          <div class="top-social">
+            <ul>
+              <li>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-heart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-user-alt"></i></a>
+              </li>
+              <li>
+                <button class="lang-switch" onclick="toggleLanguage()">
+                  <span class="lang-text">EN</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sec py-3">
+        <div class="container">
+          <div class="logo"><img src="./img/logoo.jpg" alt="" /></div>
+          <div class="desk-menu">
+            <ul class="flex-menus">
+              <li><a href="./index.html">خانه</a></li>
+              <li>
+                <a class="active" href="./new.html">تازه ها</a>
+              </li>
+              <a href="./shop.html">فروشگاه</a>
+              <li><a href="./product.html">محصولات سگ</a></li>
+              <li><a href="./product.html">محصولات گربه</a></li>
+              <a href="./trend.html">ترندها</a>
+              <a href="./blog.html">وبلاگ</a>
+              <li><a href="./call.html">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div class="toggle-menu">
+            <button
+              class="btn toggle-icon"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="inner-banner">
+      <h1>✨ جدیدترین محصولات</h1>
+    </section>
+    <h1 class="page-title">✨ جدیدترین محصولات پت شاپ</h1>
 
+    <section class="container">
+      <div class="cards">
+        <div class="card">
+          <img src="./img/image01.png" />
 
-<body>
+          <div class="card-content">
+            <h3>محصولات جدید سگ</h3>
 
+            <p>جدیدترین غذا و لوازم مراقبت سگ</p>
 
-<header class="page-header">
-<nav>
-<a href="./index.html">خانه</a>
-<a href="./shop.html">فروشگاه</a>
-<a href="./trend.html">ترندها</a>
-<a href="./blog.html">وبلاگ</a>
-<a href="./call.html">تماس</a>
-</nav>
-</header>
+            <a class="btn" href="./product.html"> مشاهده </a>
+          </div>
+        </div>
 
+        <div class="card">
+          <img src="./img/image03.jpg" />
 
+          <div class="card-content">
+            <h3>لوازم جدید گربه</h3>
 
-<h1 class="page-title">
-✨ جدیدترین محصولات پت شاپ
-</h1>
+            <p>محصولات کاربردی برای گربه‌های دوست داشتنی</p>
 
+            <a class="btn" href="./product.html"> مشاهده </a>
+          </div>
+        </div>
 
+        <div class="card">
+          <img src="./img/image05.jpg" />
 
-<section class="container">
+          <div class="card-content">
+            <h3>پیشنهاد ویژه</h3>
 
-<div class="cards">
+            <p>تخفیف روی محصولات منتخب پت شاپ</p>
 
+            <a class="btn" href="./product.html"> خرید </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-
-<img src="./img/image01.png">
-
-<div class="card-content">
-
-<h3>محصولات جدید سگ</h3>
-
-<p>
-جدیدترین غذا و لوازم مراقبت سگ
-</p>
-
-<a class="btn" href="./product.html">
-مشاهده
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="./img/image03.jpg">
-
-<div class="card-content">
-
-<h3>لوازم جدید گربه</h3>
-
-<p>
-محصولات کاربردی برای گربه‌های دوست داشتنی
-</p>
-
-<a class="btn" href="./product.html">
-مشاهده
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="./img/image05.jpg">
-
-<div class="card-content">
-
-<h3>پیشنهاد ویژه</h3>
-
-<p>
-تخفیف روی محصولات منتخب پت شاپ
-</p>
-
-<a class="btn" href="./product.html">
-خرید
-</a>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<footer>
-<p>🐶 Pet Shop © 2026</p>
-</footer>
-
-
-</body>
+    <footer>
+      <p>🐶 Pet Shop © 2026</p>
+    </footer>
+  </body>
 </html>
