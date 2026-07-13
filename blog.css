@@ -1,79 +1,56 @@
-.blog-page{
-    padding:60px 20px;
+.blog-page {
+  padding: 50px 20px;
 }
 
-
-.blog-page .shop-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-
-
-.blog-page .shop-card{
-
-background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-transition:.3s;
-
+.blog-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
 }
 
-
-.blog-page .shop-card:hover{
-
-transform:translateY(-8px);
-
+.blog-card:hover {
+  transform: translateY(-10px);
 }
 
-
-
-.blog-page .shop-card img{
-
-width:100%;
-height:230px;
-object-fit:cover;
-
+.blog-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
 }
 
-
-
-.blog-page .shop-content{
-
-padding:20px;
-text-align:center;
-
+.blog-card .card-content {
+  padding: 25px;
+  text-align: center;
 }
 
-
-
-.blog-page h3{
-
-font-size:22px;
-
+.blog-card h3 {
+  color: #333;
+  margin-bottom: 15px;
 }
 
-
-
-.blog-page p{
-
-line-height:2;
-
+.blog-card p {
+  line-height: 2;
 }
 
+.blog-card .btn {
+  display: inline-block;
+  background: #d98b39;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+}
 
-
-.blog-page .buy{
-
-display:inline-block;
-background:#d98b39;
-color:white;
-padding:10px 25px;
-border-radius:25px;
-text-decoration:none;
-
+@media (max-width: 768px) {
+  .blog-cards {
+    grid-template-columns: 1fr;
+  }
 }
