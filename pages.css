@@ -422,3 +422,114 @@ height:180px !important;
 }
 
 }
+.new-container{
+    padding:60px 20px;
+}
+
+.new-cards{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+
+.new-card{
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+
+.new-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.new-card img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+
+}
+
+
+.new-content{
+
+    padding:20px;
+    text-align:center;
+
+}
+
+
+.new-content h3{
+
+    font-size:22px;
+    margin:15px 0;
+
+}
+
+
+.new-content p{
+
+    color:#666;
+    min-height:50px;
+
+}
+
+
+.new-badge{
+
+    background:#e67e22;
+    color:white;
+    padding:5px 15px;
+    border-radius:20px;
+
+}
+
+
+.new-btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#222;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+
+}
+
+
+
+@media(max-width:900px){
+
+.new-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+.new-cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
