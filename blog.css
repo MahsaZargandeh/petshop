@@ -1,56 +1,138 @@
 .blog-page {
-  padding: 50px 20px;
+  padding: 60px 20px;
+  background: #faf7f2;
 }
 
+
 .blog-cards {
+  max-width: 1200px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
+
 .blog-card {
-  background: #fff;
-  border-radius: 20px;
+
+  background: white;
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  transition: .4s;
 }
+
 
 .blog-card:hover {
-  transform: translateY(-10px);
+
+  transform: translateY(-12px);
+
 }
+
 
 .blog-card img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
+
+  width:100%;
+  height:260px;
+  object-fit:cover;
+
 }
 
-.blog-card .card-content {
-  padding: 25px;
-  text-align: center;
+
+.card-content {
+
+  padding:25px;
+  text-align:center;
+
 }
 
-.blog-card h3 {
-  color: #333;
-  margin-bottom: 15px;
+
+.card-content h3 {
+
+  color:#333;
+  font-size:22px;
+  margin-bottom:15px;
+
 }
 
-.blog-card p {
-  line-height: 2;
+
+.card-content p {
+
+  color:#666;
+  line-height:2;
+
 }
 
-.blog-card .btn {
-  display: inline-block;
-  background: #d98b39;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-decoration: none;
+
+.card-content .btn {
+
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 25px;
+  border-radius:30px;
+  background:#d98b39;
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+
 }
 
-@media (max-width: 768px) {
-  .blog-cards {
-    grid-template-columns: 1fr;
-  }
+
+.card-content .btn:hover {
+
+  background:#b86d22;
+
+}
+
+
+
+.inner-banner {
+
+  height:250px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:url("./img/بنر-ص-اصلی-جدید-1190x383.jpg") center/cover;
+
+}
+
+
+.inner-banner h1 {
+
+ color:white;
+ font-size:40px;
+ background:rgba(0,0,0,.4);
+ padding:20px 40px;
+ border-radius:20px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.blog-cards{
+
+ grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.blog-cards{
+
+ grid-template-columns:1fr;
+
+}
+
+
+.inner-banner h1{
+
+ font-size:25px;
+
+}
+
 }
