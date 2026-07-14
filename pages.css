@@ -116,3 +116,119 @@ footer{
     text-align:center;
     padding:30px;
 }
+/* NEW PRODUCTS PAGE */
+
+.new-container{
+    width:90%;
+    margin:auto;
+}
+
+
+.new-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+.new-card{
+
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+
+.new-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.new-card img{
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+
+}
+
+
+
+.new-content{
+
+    padding:25px;
+    text-align:center;
+
+}
+
+
+.new-content h3{
+
+    color:#d97706;
+    margin-bottom:15px;
+
+}
+
+
+.new-content p{
+
+    color:#555;
+
+}
+
+
+
+.new-badge{
+
+    display:inline-block;
+    background:#ef4444;
+    color:white;
+    padding:6px 18px;
+    border-radius:20px;
+    margin-bottom:15px;
+
+}
+
+
+
+.new-btn{
+
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#d97706;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+
+}
+
+
+
+@media(max-width:900px){
+
+.new-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+.new-cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
