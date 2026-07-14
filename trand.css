@@ -1,0 +1,86 @@
+.inner-banner {
+  height: 250px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/image06.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.inner-banner h1 {
+  font-size: 40px;
+}
+
+.page-title {
+  text-align: center;
+  margin: 50px 0;
+  color: #333;
+}
+
+.trend-container {
+  width: 90%;
+  margin: auto;
+}
+
+.trend-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.trend-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.trend-card:hover {
+  transform: translateY(-10px);
+}
+
+.trend-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.trend-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.trend-content h3 {
+  color: #d97706;
+}
+
+.trend-content p {
+  color: #555;
+}
+
+.trend-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #d97706;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .trend-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .inner-banner h1 {
+    font-size: 28px;
+  }
+}
