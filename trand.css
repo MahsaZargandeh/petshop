@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazirmatn, sans-serif;
+  user-select: none;
+  display: block;
+}
 .inner-banner {
   height: 250px;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/image06.jpg");
+    url("./img/bbb.jpg");
 
   background-size: cover;
   background-position: center;

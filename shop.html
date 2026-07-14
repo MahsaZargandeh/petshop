@@ -7,135 +7,6 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./pages.css" />
-    <style>
-      .shop-banner {
-        background:
-          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-          url("./img/image01.png");
-
-        height: 300px;
-
-        background-size: cover;
-
-        background-position: center;
-
-        display: flex;
-
-        justify-content: center;
-
-        align-items: center;
-
-        color: white;
-      }
-
-      .shop-banner h1 {
-        font-size: 40px;
-      }
-
-      .shop-container {
-        width: 90%;
-
-        margin: 50px auto;
-      }
-
-      .filter-box {
-        background: white;
-
-        padding: 20px;
-
-        border-radius: 20px;
-
-        box-shadow: 0 5px 20px #ddd;
-
-        margin-bottom: 40px;
-
-        display: flex;
-
-        gap: 15px;
-
-        justify-content: center;
-      }
-
-      .filter-box button {
-        border: none;
-
-        padding: 12px 25px;
-
-        border-radius: 25px;
-
-        background: #d98b39;
-
-        color: white;
-
-        cursor: pointer;
-      }
-
-      .shop-grid {
-        display: grid;
-
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-        gap: 25px;
-      }
-
-      .shop-card {
-        background: white;
-
-        border-radius: 25px;
-
-        overflow: hidden;
-
-        box-shadow: 0 8px 25px #ddd;
-
-        transition: 0.3s;
-      }
-
-      .shop-card:hover {
-        transform: translateY(-10px);
-      }
-
-      .shop-card img {
-        width: 100%;
-
-        height: 230px;
-
-        object-fit: cover;
-      }
-
-      .shop-content {
-        padding: 20px;
-
-        text-align: center;
-      }
-
-      .shop-content h3 {
-        color: #b46b24;
-      }
-
-      .price {
-        color: #d98b39;
-
-        font-weight: bold;
-
-        font-size: 20px;
-      }
-
-      .buy {
-        display: inline-block;
-
-        margin-top: 15px;
-
-        padding: 10px 30px;
-
-        background: #d98b39;
-
-        color: white;
-
-        border-radius: 30px;
-
-        text-decoration: none;
-      }
-    </style>
   </head>
 
   <body>
@@ -202,7 +73,71 @@
         </div>
       </div>
     </header>
+    <section class="inner-banner">
+      <h1>🛒 فروشگاه پت شاپ</h1>
+    </section>
 
+    <h1 class="page-title">محصولات محبوب ما</h1>
+
+    <section class="shop-container">
+      <div class="shop-cards">
+        <div class="shop-card">
+          <img src="./img/image020.jpg" />
+
+          <div class="shop-content">
+            <h3>غذای گربه</h3>
+
+            <p>غذای کامل و سالم برای گربه‌ها</p>
+
+            <div class="price">500,000 تومان</div>
+
+            <a href="#" class="shop-btn"> خرید </a>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <img src="./img/image021.jpg" />
+
+          <div class="shop-content">
+            <h3>لوازم حیوانات</h3>
+
+            <p>وسایل ضروری پت خانگی</p>
+
+            <div class="price">400,000 تومان</div>
+
+            <a href="#" class="shop-btn"> خرید </a>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <img src="./img/image06.jpg" />
+
+          <div class="shop-content">
+            <h3>شامپو حیوانات</h3>
+
+            <p>محصولات بهداشتی با کیفیت</p>
+
+            <div class="price">550,000 تومان</div>
+
+            <a href="#" class="shop-btn"> خرید </a>
+          </div>
+        </div>
+
+        <div class="shop-card">
+          <img src="./img/image07.jpg" />
+
+          <div class="shop-content">
+            <h3>غذای سگ</h3>
+
+            <p>تغذیه سالم برای سگ‌ها</p>
+
+            <div class="price">650,000 تومان</div>
+
+            <a href="#" class="shop-btn"> خرید </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="shop-banner">
       <h1>🛒 فروشگاه پت شاپ</h1>
     </section>
